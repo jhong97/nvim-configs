@@ -23,6 +23,8 @@ return require('packer').startup(function(use)
 
   use('tpope/vim-fugitive')
 
+  use('tpope/vim-rails')
+
   use {
     'neovim/nvim-lspconfig',
     requires = {

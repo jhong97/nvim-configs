@@ -4,7 +4,7 @@ require('mason-lspconfig').setup()
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local lspconfig = require('lspconfig')
 
-local servers = {'sumneko_lua', 'solargraph'}
+local servers = {'sumneko_lua', 'solargraph', 'pyright', 'tsserver'}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
